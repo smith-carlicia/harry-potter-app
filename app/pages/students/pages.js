@@ -1,4 +1,4 @@
-
+import CharacterCard from "@/app/components/characterCard/characterCard";
 
 const Students = () => {
 
@@ -9,6 +9,7 @@ const Students = () => {
             <div className='max-w-[1240px] w-full h-full mx-auto flex justify-center items-center text-center'>
                 <div class='row'>
                     <p class='text-white'>Students</p>
+                    <CharacterCard />
                 </div>
             </div>
         </div>
