@@ -4,8 +4,8 @@ import Link from 'next/link';
 const Nav = () => {
 
     return (
-        <nav className='backdrop-opacity-10 backdrop-invert bg-white/30  list-none flex flex-row justify-content-start font-[europa] shadow-xl shadow-slate-950/50 z-[100] pt-3'>
-            <div className="list-none flex flex-row justify-content-start font-[europa] shadow-xl shadow-slate-950/50 space-x-4">
+        <nav className='bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 list-none flex flex-row justify-content-start font-[europa] pt-5 pb-5 pl-3 sticky top-0'>
+            <div className="bg-transparent list-none flex flex-row justify-content-start font-[europa] space-x-4">
                 <ul>
                     <li>
                         <Link href="/" className='font-medium tracking-wide text-xl no-underline ml-1 scroll={false}'>Home</Link>
