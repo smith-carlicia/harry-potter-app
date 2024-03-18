@@ -1,4 +1,7 @@
 import Image from "next/image";
+import StaffAncestry from "@/app/components/filter/staffAncestry/staffAncestry";
+import StaffSpecies from "@/app/components/filter/staffSpecies/staffSpecies";
+import StudentHouse from "@/app/components/filter/studentHouse/studentHouse";
 
 export default async function Student() {
 
@@ -11,6 +14,11 @@ export default async function Student() {
                 <div class='col-2' />
                 <div class='col-8'>
                     <h1 class='flex justify-center font-[kepler] text-4xl font-bold text-white pt-8 mb-10'>Staff</h1>
+                    <div class='flex flex-wrap items-stretch'>
+                        <StaffAncestry />
+                        <StaffSpecies />
+                        <StudentHouse />
+                    </div>
                     <div className='max-w-[1240px] max-h-fit w-full h-full mx-auto flex flex-wrap justify-center items-center text-center space-x-5 space-y-5'>
                         {staffs.map((staff) => (
                             <div key={(staff.id)} class="text-white">
@@ -49,25 +57,41 @@ export default async function Student() {
     );
 }
 
-// export default Staff;
-
-// // import CharacterCard from "@/app/components/characterCard/characterCard";
-
-// const Students = () => {
-
-
-
-//     return (
-//         <div id='students' className='w-full h-screen bg-[#082f49]'>
-//             <div className='max-w-[1240px] w-full h-full mx-auto flex justify-center items-center text-center'>
-//                 <div class='row'>
-//                     <p class='text-white'>Students</p>
-//                     {/* <CharacterCard /> */}
-//                 </div>
-//             </div>
+// const items = [
+//     {
+//       title: 'House',
+//       content: (
+        
+//       ),
+//     },
+//     {
+//       title: 'Ancestry',
+//       content: (
+//         <div className='border-2 border-blue-400 rounded-lg p-4'>
+//           <h1 className='text-3xl text-blue-600'>Title Test 2</h1>
+//           <p>
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+//             aperiam asperiores dolo iti harum! Totam, mollitia quos voluptatem
+//             deleniti provident obcaecati rerum.
+//           </p>
 //         </div>
-
-//     );
-// }
-
-// export default Students;
+//       ),
+//     },
+//     {
+//       title: 'Species',
+//       content: (
+//         <div className='border-2 border-blue-400 rounded-lg p-4'>
+//           <h1 className='text-3xl text-blue-600'>Title Test 3</h1>
+//           <p>
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+//             aperiam asperiores doloribus velit dolore magnam ex consectetur fugit
+//             earum illum qui similique architecto dolorum, minima enim quidem
+//             voluptatibus at nulla deleniti harum! Totam, mollitia quos voluptatem
+//             deleniti provident obcaecati rerum. amet consectetur adipisicing elit.
+//             Dolores aperiam asperiores doloribus velit dolore magnam ex
+//             consectetur fugit earum illum qui similiq
+//           </p>
+//         </div>
+//       ),
+//     },
+//   ];

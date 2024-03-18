@@ -13,11 +13,6 @@ const Nav = () => {
                     </li>
                 </ul>
                 <ul>
-                    <li class="dropdown">
-                        <Link href="/" className='font-medium tracking-wide text-xl no-underline ml-1 dropdown-toggle'>House</Link>
-                    </li>
-                </ul>
-                <ul>
                     <li>
                         <Link href="/pages/students" className='font-medium tracking-wide text-xl no-underline ml-1'>Students</Link>
                     </li>
